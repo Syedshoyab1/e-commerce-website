@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoyab Couture</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+  <div class="logo-section">
+    <img src="./images/logo.jpg" alt="Shoyab Couture Logo" class="logo-img" />
+    <h1 class="logo-text">Shoyab <span>Couture</span></h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section id="products">
+  <h2>Our Collection</h2>
+  <div class="product-list">
+    <div class="product">
+      <img src="./images/chadar abaya.jpg" alt="Elegant Dress" />
+      <h3>Chaddar Abaya</h3>
+      <p>₹999</p>
+      <button onclick="addToCart('Elegant Dress', 999)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="./images/tasbih.jpg" alt="Kurta Pajama" />
+      <h3>Tasbih</h3>
+      <p>₹99</p>
+      <button onclick="addToCart('Kurta Pajama', 1499)">Add to Cart</button>
+    </div>
+    
+    
+    
+
+  <div class="product">
+    <img src="./images/kids wear.jpg" alt="Kids Wear" />
+    <h3>Kids Wear</h3>
+    <p>₹599</p>
+    <button onclick="addToCart('Kids Wear', 599)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/kids wear boys.jpg" alt="Party Gown" />
+    <h3>Boy's kids wear</h3>
+    <p>₹1,999</p>
+    <button onclick="addToCart('Party Gown', 1999)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/kurta pajama.jpg" alt="Kurta Pajama" />
+    <h3>Kurta Pajama</h3>
+    <p>₹1,499</p>
+    <button onclick="addToCart('Kurta Pajama', 1499)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/zari handwork coat.jpg" alt="Denim Jacket" />
+    <h3>Zari handwork coat</h3>
+    <p>₹1,199</p>
+    <button onclick="addToCart('Denim Jacket', 1199)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/baby shoes.jpg" alt="Winter Coat" />
+    <h3>Baby Shoes</h3>
+    <p>₹2,499</p>
+    <button onclick="addToCart('Winter Coat', 2499)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/Lehanga Set.jpg" alt="Lehenga Set" />
+    <h3>Lehenga Set</h3>
+    <p>₹3,299</p>
+    <button onclick="addToCart('Lehenga Set', 3299)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/kimar.jpg" alt="Girls Frock" />
+    <h3>kimar</h3>
+    <p>₹899</p>
+    <button onclick="addToCart('Girls Frock', 899)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/abaya.jpg" alt="Elegant Abaya" />
+    <h3>Elegant Abaya</h3>
+    <p>₹1,899</p>
+    <button onclick="addToCart('Elegant Abaya', 1899)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/wedding gown.jpg" alt="Wedding Gown" />
+    <h3>Wedding Gown</h3>
+    <p>₹5,499</p>
+    <button onclick="addToCart('Wedding Gown', 5499)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/couple prayer mat.jpg" alt="Couple Prayer Mat" />
+    <h3>Couple Prayer Mat</h3>
+    <p>₹1,099</p>
+    <button onclick="addToCart('Couple Prayer Mat', 1099)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/hijab set.jpg" alt="Hijab Set" />
+    <h3>Hijab Set (5 pcs)</h3>
+    <p>₹699</p>
+    <button onclick="addToCart('Hijab Set', 699)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="./images/men ethnic set.jpg" alt="Mens Ethnic Set" />
+    <h3>Mens Ethnic Set</h3>
+    <p>₹1,799</p>
+    <button onclick="addToCart('Mens Ethnic Set', 1799)">Add to Cart</button>
+  </div>
+  </div>
+</section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: ₹0</p>
+      <label for="payment">Payment Method:</label>
+      <select id="payment">
+        <option value="cod">Cash on Delivery</option>
+        <option value="online">Online Payment</option>
+      </select>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shoyab Couture. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
